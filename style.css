@@ -1,8 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+:root {
+    --cor0: #E5B5E1;
+    --cor1: #e5c8e2;
+    --cor2: #E39974;
+    --cor3: #a97358;
+    --cor4: #654536;
+    --cor5: #B06E4C;
+
+
+    --fonte-base: "Forum", serif;
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-teste: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* olhar a fonte depois */
+}
+
 body {
-    font-family: moontime;
+    background-color: var(--cor2);
+    margin: 0;
+    font-family: var(--fonte-teste);
+}
+
+header {
+    background-color: var(--cor0);
+    text-align: center;
+    margin: auto;
+    min-height: 150px;
+    padding-top: 40px;
+}
+
+header>h1 {
+    color: white;
+    font-family: var(--fonte-base);
+    margin-bottom: 20px;
+    font-size: 3em;
+    font-weight: bold;
+    text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.437);
+}
+
+header>p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-shadow: 2px 1px 5px rgba(0, 0, 0, 0.437);
+}
+
+nav {
+    padding: 10px;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.363);
+    background-color: var(--cor5);
+}
+
+nav>a {
+    color: var(--cor1);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    margin: auto 100px;
+}
+
+nav>a:hover {
+    background-color: var(--cor3);
+    color: var(--cor4);
+}
+
+main {
+    color: #ffffff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: auto;
+    min-width: 300px;
+    max-width: 1000px;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.418);
+    background-color: var(--cor0);
+}
+
+main h1 {
+    color: var(--cor5);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.363);
+    font-family: var(--fonte-android);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+main img {
+    width: 100%;
+}
+
+div.do_js>a {
+    color: var(--cor1);
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    margin: auto;
+    cursor: pointer;
+}
+
+.do_js {
+    color: white;
+    background-color: var(--cor4);
+    display: flex;
+    gap: 1.2em;
+    padding: 10px;
+    border-radius: 5px 5px 0px 0px;
+    margin: 0px -20px;
+}
+
+
+
+div.localizacao {
+    background-color: var(--cor5);
+    padding: 20px;
+    margin: 0 -20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.localizacao_content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 1;
+    height: 1;
+    align-items: center;
+}
+
+div.localizacao_content>iframe {
+    width: 100%;
+    height: 22em;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.363);
+}
+
+div.localizacao_content>p {
+    background-color: var(--cor2);
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.363);
+    border-radius: 5px;
+    width: 1;
+    height: 1;
+    padding: 1.2em;
+    flex-grow: 1;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 1px 0px;
+    background-color: var(--cor0);
+    color: var(--cor4);
 
 }
-h1 {
-    background-color: rgb(246, 174, 160);
-    color: rgb(242, 242, 242);
+
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
 }
